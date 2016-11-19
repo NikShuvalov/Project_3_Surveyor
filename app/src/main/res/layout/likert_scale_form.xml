@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/question_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How likely are you to answer this question?"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"/>
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="7dp"
+        android:background="#888"
+        android:layout_below="@id/question_prompt"/>
+
+    <TextView
+        android:id="@+id/low_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Likely"
+        android:textColor="#555"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/divider_line"
+        />
+
+    <TextView
+        android:id="@+id/high_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Very Likely"
+        android:textColor="#555"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/divider_line"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/low_text">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/opt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"/>
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/opt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"/>
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/opt_3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"/>
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/opt_4"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"/>
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/opt_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"/>
+
+    </RadioGroup>
+
+</RelativeLayout>
